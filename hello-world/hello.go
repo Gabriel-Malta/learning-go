@@ -2,8 +2,13 @@ package main
 
 import "fmt"
 
+const prefixoHelloEN = "Hello, "
+
 func Hello(nome string) string {
-	return "Hello " + nome + "!"
+	if nome == ""{
+		nome = "World"
+	}
+	return prefixoHelloEN + nome + "!"
 }
 
 func main()  {
